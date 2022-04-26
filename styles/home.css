@@ -125,7 +125,15 @@ nav > a {
   width: 60%;
 }
 
-
+.map {
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+  background-color: yellow;
+  font-size:90%;
+}
 
 
 
