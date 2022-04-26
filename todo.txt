@@ -1,2 +1,0 @@
-Add project to git 
-complete "ad-section" & "footer"
