@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Ropa+Sans:ital@1&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  list-style-type: none;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-image: url(../resources/pattern.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+nav {
+  font-family: "Ropa Sans", sans-serif;
+  font-size: 2.5rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  background-color: #007042;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 28px 49px 53px 1px rgba(0, 0, 0, 0.51);
+}
+
+nav > a {
+  text-decoration: none;
+  color: black;
+}
+
+.flex {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  text-decoration: none;
+}
+.flex > li > a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 200;
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+}
+
+.flex > li > a:hover {
+  color: white;
+  border-radius: 25px;
+}
+.cart {
+  width: 50px;
+}
+
+/* Coffee Scroller */
+.content {
+  margin-top: 10%;
+  padding: 2rem;
+  background:linear-gradient(39deg, rgba(0, 112, 66, 1) 0%, rgba(255, 255, 255, 0.5) 100%) ;
+}
+
+.content > p {
+  font-family: "Ropa Sans";
+  font-size: calc(3rem,8vw,10vw);
+  /* font-size: calc(); */
+  text-align: center;
+  font-weight: bold;
+}
+
+.coffee-parent {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  overflow-x: auto;
+}
+
+.coffee-parent > div > a > img {
+  width: 100%;
+  background-size: contain;
+}
+
+.item1 {
+  border-radius: 3%;
+  text-align: center;
+  min-width: 100px;
+  max-width: 50%;
+  background-color: white;
+  padding: 5px;
+  margin: 3px;
+  font-family: 'Ropa Sans',monospace;
+
+}
+
+.item1 p {
+  width: 100%;
+  font-size: calc(1rem,2vw,2rem);
+}
+
+/* Coffee Ad */
+.coffee-ad{
+  /* margin-top: 10%; */
+  /* background:linear-gradient(39deg, rgba(0, 112, 66, 1) 0%, rgba(255, 255, 255, 0.5) 100%); */
+  color: red;
+}
+
+.coffee-ad > p{
+  text-align: center;
+  font-size: clamp(90%,10vw,6rem);
+  font-family: "Ropa Sans";
+  margin-bottom: 5%;
+  background-color: rgb(228, 226, 226);
+  min-height: fit-content;
+  color:#007042;
+  padding: 3%;
+}
+.coffee-ad::after{
+  content: "Get one now !";
+}
+.coffee-ad > img {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5%;
+  width: 60%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media screen and (max-width: 576px) {
+  .links {
+    display: none;
+    justify-content: space-between;
+  }
+
+  body{
+    background-size: cover;
+  }
+
+  nav {
+    justify-content: space-between;
+    font-size: 2em;
+  }
+
+  .cart {
+    display: none;
+    width: 60%;
+  }
+  .content{
+    margin: 20% 0 0 0;
+  }
+
+  .coffee-parent{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  nav {
+    position: sticky;
+    top:0;
+  }
+}
+
+@media (min-width:577px) and (max-width: 740px) {
+  body {
+    content: "";
+  }
+}
